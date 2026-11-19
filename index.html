@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quesabirrias · Birriería</title>
+  <meta name="description" content="Birriería de quesabirrias, tacos y consomé. Promociones, menú, horario y pedidos por WhatsApp.">
+  <meta name="theme-color" content="#0d0b0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <span class="loader__word">Quesa<em>birrias</em></span>
+  </div>
+
+  <!-- Navegación -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__logo">Quesa<span>birrias</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#promos">Promos</a>
+      <a href="#menu">Menú</a>
+      <a href="#pedido">Pedido</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a href="#pedido" class="btn btn--small magnetic">Ordenar</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow reveal">Birria de res · Hecha en casa · Desde temprano</p>
+        <h1 class="hero__title">
+          <span class="line"><span>El sabor</span></span>
+          <span class="line"><span>que se <em>moja</em></span></span>
+          <span class="line"><span>en consomé.</span></span>
+        </h1>
+        <p class="hero__lead reveal">Quesabirrias doradas en comal, queso que se estira y un consomé que abraza. Sencillo, honesto y muy sabroso.</p>
+        <div class="hero__cta reveal">
+          <a href="#menu" class="btn magnetic">Ver menú</a>
+          <a href="#promos" class="btn btn--ghost magnetic">Promociones →</a>
+        </div>
+      </div>
+      <div class="hero__media reveal">
+        <div class="img-frame tilt">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80" alt="Tacos dorados con cebolla y cilantro" loading="eager">
+        </div>
+        <div class="badge spin" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#circ">• RECIÉN HECHAS • CON CONSOMÉ • RECIÉN HECHAS • CON CONSOMÉ </textPath></text></svg>
+          <span>$35</span>
+        </div>
+      </div>
+      <a href="#nosotros" class="hero__scroll" aria-label="Bajar"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Quesabirria de maíz</span><i>✦</i><span>Quesabirria de harina</span><i>✦</i><span>Tacos</span><i>✦</i><span>Consomé</span><i>✦</i><span>Agua de jamaica</span><i>✦</i>
+        <span>Quesabirria de maíz</span><i>✦</i><span>Quesabirria de harina</span><i>✦</i><span>Tacos</span><i>✦</i><span>Consomé</span><i>✦</i><span>Agua de jamaica</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Nosotros -->
+    <section class="section about" id="nosotros">
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="eyebrow reveal">Nuestra historia</p>
+          <h2 class="title reveal">Birria lenta,<br>servida <em>rápido</em>.</h2>
+          <p class="reveal">Cocinamos la carne a fuego lento durante horas con chiles secos, especias y mucho cariño. El resultado: una birria jugosa que rellena cada quesabirria, dorada en el comal con queso derretido, y un consomé para remojar hasta la última mordida.</p>
+          <p class="reveal">Somos un lugar sencillo, para comer bien, a buen precio y con ambiente de barrio.</p>
+          <div class="stats">
+            <div class="stat reveal"><strong data-count="8">0</strong><span>horas de cocción</span></div>
+            <div class="stat reveal"><strong data-count="100">0</strong><span>% hecho en casa</span></div>
+            <div class="stat reveal"><strong data-count="35" data-prefix="$">0</strong><span>desde</span></div>
+          </div>
+        </div>
+        <div class="about__media">
+          <div class="img-frame parallax reveal" data-speed="0.08">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Carne cocinándose lentamente" loading="lazy">
+          </div>
+          <div class="img-frame img-frame--small parallax reveal" data-speed="-0.06">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=700&q=80" alt="Tacos servidos en plato" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promociones -->
+    <section class="section promos" id="promos">
+      <div class="section__head">
+        <p class="eyebrow reveal">Para compartir (o no)</p>
+        <h2 class="title reveal">Promociones</h2>
+      </div>
+      <div class="promos__grid">
+        <article class="promo reveal tilt">
+          <div class="promo__img img-frame">
+            <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=800&q=80" alt="Quesabirrias con consomé" loading="lazy">
+          </div>
+          <div class="promo__body">
+            <span class="tag">Promo</span>
+            <h3>Individual</h3>
+            <ul>
+              <li>3 quesabirrias</li>
+              <li>1 consomé</li>
+              <li>1 refresco o agua fresca</li>
+            </ul>
+            <div class="promo__foot">
+              <span class="price">$135</span>
+              <button class="add" data-name="Promo Individual" data-price="135" aria-label="Agregar Promo Individual">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo promo--featured reveal tilt">
+          <div class="promo__img img-frame">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=800&q=80" alt="Plato con varias quesabirrias para compartir" loading="lazy">
+          </div>
+          <div class="promo__body">
+            <span class="tag tag--hot">La favorita</span>
+            <h3>En pareja</h3>
+            <ul>
+              <li>4 quesabirrias</li>
+              <li>2 consomés</li>
+              <li>2 refrescos o aguas frescas</li>
+            </ul>
+            <div class="promo__foot">
+              <span class="price">$190</span>
+              <button class="add" data-name="Promo En Pareja" data-price="190" aria-label="Agregar Promo En Pareja">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo reveal tilt">
+          <div class="promo__img img-frame">
+            <img src="https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?auto=format&fit=crop&w=800&q=80" alt="Tacos para niños" loading="lazy">
+          </div>
+          <div class="promo__body">
+            <span class="tag">Promo</span>
+            <h3>Peques</h3>
+            <ul>
+              <li>2 tacos</li>
+              <li>1 agua fresca</li>
+            </ul>
+            <div class="promo__foot">
+              <span class="price">$40</span>
+              <button class="add" data-name="Promo Peques" data-price="40" aria-label="Agregar Promo Peques">+</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Menú -->
+    <section class="section menu" id="menu">
+      <div class="section__head">
+        <p class="eyebrow reveal">Precios normales</p>
+        <h2 class="title reveal">Menú</h2>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="comida">Comida</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="consome">Consomé</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="bebidas">Bebidas</button>
+        <span class="tabs__pill" aria-hidden="true"></span>
+      </div>
+
+      <div class="panels">
+        <ul class="menu__list is-active" data-panel="comida">
+          <li class="item">
+            <div><h4>Quesabirria de maíz</h4><p>Tortilla de maíz dorada, birria y queso derretido.</p></div>
+            <span class="dots"></span><span class="item__price">$35</span>
+            <button class="add" data-name="Quesabirria de maíz" data-price="35" aria-label="Agregar Quesabirria de maíz">+</button>
+          </li>
+          <li class="item">
+            <div><h4>Quesabirria de harina</h4><p>Tortilla de harina, más grande y crujiente.</p></div>
+            <span class="dots"></span><span class="item__price">$40</span>
+            <button class="add" data-name="Quesabirria de harina" data-price="40" aria-label="Agregar Quesabirria de harina">+</button>
+          </li>
+          <li class="item">
+            <div><h4>Taco de birria</h4><p>Clásico, con cebolla y cilantro.</p></div>
+            <span class="dots"></span><span class="item__price">$20</span>
+            <button class="add" data-name="Taco de birria" data-price="20" aria-label="Agregar Taco de birria">+</button>
+          </li>
+        </ul>
+
+        <ul class="menu__list" data-panel="consome">
+          <li class="item">
+            <div><h4>Consomé chico</h4><p>Caldo de birria con cebolla, cilantro y limón.</p></div>
+            <span class="dots"></span><span class="item__price">$20</span>
+            <button class="add" data-name="Consomé chico" data-price="20" aria-label="Agregar Consomé chico">+</button>
+          </li>
+          <li class="item">
+            <div><h4>Consomé mediano</h4><p>Para los que sí vienen con hambre.</p></div>
+            <span class="dots"></span><span class="item__price">$35</span>
+            <button class="add" data-name="Consomé mediano" data-price="35" aria-label="Agregar Consomé mediano">+</button>
+          </li>
+          <li class="item item--note">
+            <div><h4>Con carne</h4><p>Agrégale carne a tu consomé.</p></div>
+            <span class="dots"></span><span class="item__price">+$10</span>
+            <button class="add" data-name="Carne extra (consomé)" data-price="10" aria-label="Agregar carne extra">+</button>
+          </li>
+        </ul>
+
+        <ul class="menu__list" data-panel="bebidas">
+          <li class="item">
+            <div><h4>Agua fresca de jamaica</h4><p>Natural, bien fría.</p></div>
+            <span class="dots"></span><span class="item__price">$20</span>
+            <button class="add" data-name="Agua de jamaica" data-price="20" aria-label="Agregar Agua de jamaica">+</button>
+          </li>
+          <li class="item">
+            <div><h4>Refrescos</h4><p>Coca, Sprite, Fanta, Fresca, Manzanita.</p></div>
+            <span class="dots"></span><span class="item__price">$15</span>
+            <button class="add" data-name="Refresco" data-price="15" aria-label="Agregar Refresco">+</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section process">
+      <div class="section__head">
+        <p class="eyebrow reveal">Así se hace</p>
+        <h2 class="title reveal">De la olla<br>a tu <em>mesa</em>.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step__n">01</span><h3>Adobo</h3><p>Chiles guajillo y ancho, ajo, especias y vinagre. Molido al momento.</p></li>
+        <li class="step reveal"><span class="step__n">02</span><h3>Fuego lento</h3><p>La carne se cocina por horas hasta deshacerse con el tenedor.</p></li>
+        <li class="step reveal"><span class="step__n">03</span><h3>Al comal</h3><p>Tortilla bañada en grasa de la birria, queso y carne. Dorada por ambos lados.</p></li>
+        <li class="step reveal"><span class="step__n">04</span><h3>A remojar</h3><p>Servida con consomé caliente, cebolla, cilantro y limón.</p></li>
+      </ol>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" aria-label="Galería">
+      <div class="gallery__track">
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=700&q=80" alt="Tacos" loading="lazy"></figure>
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Ambiente del local" loading="lazy"></figure>
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=700&q=80" alt="Quesabirrias" loading="lazy"></figure>
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Mesas del local" loading="lazy"></figure>
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=700&q=80" alt="Plato de tacos" loading="lazy"></figure>
+        <figure class="img-frame"><img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=700&q=80" alt="Tacos dorados" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="section reviews">
+      <div class="section__head">
+        <p class="eyebrow reveal">Lo que dicen</p>
+        <h2 class="title reveal">Clientes felices</h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="review reveal"><p>“El consomé está buenísimo y las quesabirrias de harina son enormes. Volvemos cada fin de semana.”</p><cite>★★★★★ · Cliente frecuente</cite></blockquote>
+        <blockquote class="review reveal"><p>“La promo en pareja es lo mejor: comimos dos personas bien a gusto por muy buen precio.”</p><cite>★★★★★ · Visita en pareja</cite></blockquote>
+        <blockquote class="review reveal"><p>“Mis hijos aman la promo peques. Atención rápida y todo muy limpio.”</p><cite>★★★★★ · Familia</cite></blockquote>
+      </div>
+    </section>
+
+    <!-- Pedido -->
+    <section class="section order" id="pedido">
+      <div class="order__card reveal">
+        <div class="order__intro">
+          <p class="eyebrow">Para llevar</p>
+          <h2 class="title">Arma tu pedido</h2>
+          <p>Toca <b>+</b> en cualquier platillo del menú o de las promociones y envíanos tu pedido por WhatsApp.</p>
+        </div>
+        <div class="order__box">
+          <ul class="cart" id="cart">
+            <li class="cart__empty">Tu pedido está vacío 🌮</li>
+          </ul>
+          <div class="cart__total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+          <a href="#" class="btn btn--block magnetic" id="sendOrder" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visítanos -->
+    <section class="section visit" id="visitanos">
+      <div class="visit__grid">
+        <div>
+          <p class="eyebrow reveal">Te esperamos</p>
+          <h2 class="title reveal">Visítanos</h2>
+          <div class="info reveal">
+            <h4>Horario</h4>
+            <ul class="hours">
+              <li><span>Lunes a viernes</span><span>8:00 – 16:00</span></li>
+              <li><span>Sábado y domingo</span><span>8:00 – 17:00</span></li>
+            </ul>
+            <p class="status" id="openStatus"></p>
+          </div>
+          <div class="info reveal">
+            <h4>Dirección</h4>
+            <p>Calle Principal #123, Col. Centro<br>Tu ciudad, México</p>
+          </div>
+          <div class="info reveal">
+            <h4>Contacto</h4>
+            <p><a href="tel:+520000000000">+52 000 000 0000</a></p>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa de ubicación" src="https://www.google.com/maps?q=birrieria%20centro%20mexico&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__big">Quesa<span>birrias</span></p>
+    <div class="footer__row">
+      <p>© <span id="year"></span> Quesabirrias. Hecho con hambre.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+      <a href="#top" class="to-top">Arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante del pedido -->
+  <a href="#pedido" class="fab" id="fab" aria-label="Ver pedido">
+    🌮 <span id="fabCount">0</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
