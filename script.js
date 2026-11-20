@@ -1,5 +1,5 @@
 // ===== Configuración: cambia este número por el WhatsApp real del negocio =====
-const WHATSAPP = "520000000000";
+const WHATSAPP = "524281688990";
 
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
