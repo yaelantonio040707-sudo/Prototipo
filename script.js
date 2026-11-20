@@ -154,15 +154,24 @@ function renderCart() {
   sendBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 }
 
-$$(".add").forEach(btn => btn.addEventListener("click", () => {
-  const { name, price } = btn.dataset;
+function addToCart(name, price, qty = 1) {
   const it = cart.get(name) || { price: +price, qty: 0 };
-  it.qty++; cart.set(name, it);
+  it.qty += qty; cart.set(name, it);
   renderCart();
-  btn.classList.remove("is-pop"); void btn.offsetWidth; btn.classList.add("is-pop");
   fab.classList.remove("is-bump"); void fab.offsetWidth; fab.classList.add("is-bump");
+}
+$$(".add").forEach(btn => btn.addEventListener("click", () => {
+  addToCart(btn.dataset.name, btn.dataset.price);
+  btn.classList.remove("is-pop"); void btn.offsetWidth; btn.classList.add("is-pop");
 }));
 renderCart();
+
+// API compartida con el asistente de chat (chatbot.js)
+window.CasaPirul = {
+  WHATSAPP, money, addToCart,
+  getCart: () => [...cart].map(([name, it]) => ({ name, ...it })),
+  clearCart: () => { cart.clear(); renderCart(); },
+};
 
 // ----- Abierto / cerrado según horario -----
 (function openStatus() {
